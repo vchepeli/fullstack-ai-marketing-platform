@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "asset-processing-service"
+version = "0.1.0"
+description = ""
+authors = ["Brandon Hancock <brandon@brandonhancock.io>", "Vitalij Čepeljuk <vchepeli@github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.10.5"
+python-dotenv = "^1.0.1"
+pydantic = "^2.9.2"
+ffmpeg-python = "^0.2.0"
+openai = "^1.47.0"
+tiktoken = "^0.7.0"
+
+[tool.poetry.scripts]
+asset-processing-service = "asset_processing_service.main:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
